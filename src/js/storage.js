@@ -17,11 +17,9 @@ export const load = key => {
 };
 
 export const remove = key => {
-    try {
-        localStorage.removeItem(key);
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-
+  try {
+    localStorage.removeItem(key);
+  } catch (error) {
+    console.log(error);
+  }
+};

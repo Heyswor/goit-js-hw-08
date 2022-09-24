@@ -21,13 +21,12 @@ function onInputText(event) {
 }
 
 function onFormSubmit(event) {
-  event.preventDefault();  
+  event.preventDefault();
   if (!localStorage.getItem(INPUT_STORAGE_KEY)) {
     return;
   }
   const saveObj = load(INPUT_STORAGE_KEY);
-  console.log('email:', saveObj.email);
-  console.log('message:', saveObj.message);
+  console.log(saveObj);
 
   const { target } = event;
 
